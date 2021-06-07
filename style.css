@@ -210,3 +210,24 @@
         width:300px;
     }
 }
+
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: 3px;
+    background: white;
+  }
+  
+  .cursor.blink {
+    animation: blink .8s infinite ease-in-out;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      background: white;
+    }
+    50%, 70% {
+      background: transparent;
+    }
+  }
