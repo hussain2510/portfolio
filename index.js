@@ -48,3 +48,15 @@ const type = () => {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, 1000);
 })
+
+var nav_logo_heading=document.querySelector(".nav-logo-heading");
+var nav_list=document.querySelector(".nav-list");
+var burger=document.querySelector(".burger");
+var nav_bar=document.querySelector(".nav-bar");
+
+burger.addEventListener('click',()=>{
+  nav_logo_heading.classList.toggle('res-vis');
+  nav_list.classList.toggle('res-vis');
+  nav_bar.classList.toggle('res-h');
+  
+})
